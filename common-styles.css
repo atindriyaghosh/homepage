@@ -54,3 +54,8 @@ button:disabled {
     max-height: 260px;
     overflow: auto;
 }
+
+main.container {
+    max-width: 34rem;
+    margin-top: clamp(3rem, 18vh, 9rem);
+}
