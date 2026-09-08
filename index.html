@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'none';
+                   style-src 'self' 'unsafe-inline';
+                   img-src 'self' data:;
+                   connect-src 'none';">
+    <title>Atindriya Ghosh</title>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="vendor/@picocss/pico@2.1.1/pico.min.css">
+    <link rel="stylesheet" href="common-styles.css">
+    <style>
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .tool-card {
+            border: 1px solid var(--pico-muted-border-color);
+            border-radius: var(--pico-border-radius);
+            padding: 0.5rem;
+            transition: all 0.2s;
+            background: var(--pico-card-background-color);
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tool-card:hover {
+            border-color: #6b8dd6;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .tool-card h3 {
+            margin-bottom: 0.15rem;
+            color: inherit;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .tool-card p {
+            margin: 0;
+            color: var(--pico-muted-color);
+            font-size: 0.75rem;
+            line-height: 1.3;
+        }
+
+        .tool-card .domain {
+            margin-top: 0.4rem;
+            font-size: 0.7rem;
+            color: #6b8dd6;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <hgroup>
+            <h1>Atindriya Ghosh</h1>
+            <p>My corner of the internet — stuff that interests me.</p>
+        </hgroup>
+
+        <div class="tool-grid">
+            <a href="https://tools.atindriyaghosh.com" class="tool-card">
+                <h3>HTML Tools</h3>
+                <p>A collection of single-file, browser-based utilities for everyday tasks like date/time conversion, text processing, and PDFs.</p>
+                <span class="domain">tools.atindriyaghosh.com</span>
+            </a>
+
+            <a href="https://how.atindriyaghosh.com" class="tool-card">
+                <h3>How I Build Things</h3>
+                <p>Notes on my approach to designing, building, and shipping projects.</p>
+                <span class="domain">how.atindriyaghosh.com</span>
+            </a>
+        </div>
+    </main>
+
+    <footer style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--pico-muted-border-color); text-align: center; font-size: 0.8rem; color: #6b7280; line-height: 1.4;">
+        <div style="display: flex; justify-content: center; align-items: center; gap: 0.5rem;">
+            <span style="display: flex; align-items: center;">© 2026 atindriyaghosh</span>
+            <span style="display: flex; align-items: center; opacity: 0.6;">|</span>
+            <a href="https://github.com/atindriyaghosh/homepage" style="display: inline-flex; align-items: center; gap: 0.3rem; color: #6b7280; text-decoration: none;" title="View on GitHub">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle;">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3.015-.405 1.035 0 2.055.135 3.015.405 2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                GitHub
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
