@@ -13,72 +13,43 @@
     <link rel="stylesheet" href="vendor/@picocss/pico@2.1.1/pico.min.css">
     <link rel="stylesheet" href="common-styles.css">
     <style>
-        .tool-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 0.5rem;
-            margin-top: 0.5rem;
-        }
-
-        .tool-card {
-            border: 1px solid var(--pico-muted-border-color);
-            border-radius: var(--pico-border-radius);
-            padding: 0.5rem;
-            transition: all 0.2s;
-            background: var(--pico-card-background-color);
-            text-decoration: none;
-            color: inherit;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .tool-card:hover {
-            border-color: #6b8dd6;
-            transform: none;
-            box-shadow: none;
-        }
-
-        .tool-card h3 {
-            margin-bottom: 0.15rem;
-            color: inherit;
-            font-size: 0.9rem;
-            font-weight: 600;
-        }
-
-        .tool-card p {
-            margin: 0;
+        .wordmark {
+            font-family: var(--pico-font-family-monospace);
+            font-size: 1rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
             color: var(--pico-muted-color);
-            font-size: 0.75rem;
-            line-height: 1.3;
+            margin-bottom: 2.5rem;
         }
-
-        .tool-card .domain {
-            margin-top: 0.4rem;
-            font-size: 0.7rem;
-            color: #6b8dd6;
+ 
+        .index {
+            margin: 0;
+            padding-left: 1.1rem;
+        }
+ 
+        .index li {
+            margin-bottom: 0.6rem;
+        }
+ 
+        .index .note {
+            color: var(--pico-muted-color);
         }
     </style>
 </head>
 <body>
     <main class="container">
-        <hgroup>
-            <h3>Atindriya Ghosh</h3>
-            <p>My corner of the internet — stuff that interests me.</p>
-        </hgroup>
+        <h1 class="wordmark">Atindriya Ghosh</h1>
 
-        <div class="tool-grid">
-            <a href="https://tools.atindriyaghosh.com" class="tool-card">
-                <h3>HTML Tools</h3>
-                <p>A collection of single-file, browser-based utilities for everyday tasks like date/time conversion, text processing, and PDFs.</p>
-                <span class="domain">tools.atindriyaghosh.com</span>
-            </a>
-
-            <a href="https://how.atindriyaghosh.com" class="tool-card">
-                <h3>How I Build Things</h3>
-                <p>And why.</p>
-                <span class="domain">how.atindriyaghosh.com</span>
-            </a>
-        </div>
+        <ul class="index">
+            <li>
+                <a href="https://tools.atindriyaghosh.com">HTML tools</a>
+                <span class="note">— dates, text, PDFs. Nothing leaves the tab.</span>
+            </li>
+            <li>
+                <a href="https://how.atindriyaghosh.com">How I build things</a>
+                <span class="note">— and why.</span>
+            </li>
+        </ul>
     </main>
 
     <footer style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--pico-muted-border-color); text-align: center; font-size: 0.8rem; color: #6b7280; line-height: 1.4;">
