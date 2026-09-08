@@ -13,45 +13,48 @@
     <link rel="stylesheet" href="vendor/@picocss/pico@2.1.1/pico.min.css">
     <link rel="stylesheet" href="common-styles.css">
     <style>
-        .link-grid {
+        .tool-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            gap: 0.75rem;
-            margin-top: 1rem;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 0.5rem;
+            margin-top: 0.5rem;
         }
 
-        .link-card {
+        .tool-card {
             border: 1px solid var(--pico-muted-border-color);
             border-radius: var(--pico-border-radius);
-            padding: 1rem;
+            padding: 0.5rem;
+            transition: all 0.2s;
             background: var(--pico-card-background-color);
             text-decoration: none;
             color: inherit;
             display: flex;
             flex-direction: column;
-            transition: border-color 0.2s;
         }
 
-        .link-card:hover {
+        .tool-card:hover {
             border-color: #6b8dd6;
+            transform: none;
+            box-shadow: none;
         }
 
-        .link-card h2 {
-            margin-bottom: 0.25rem;
+        .tool-card h3 {
+            margin-bottom: 0.15rem;
             color: inherit;
-            font-size: 1.1rem;
+            font-size: 0.9rem;
+            font-weight: 600;
         }
 
-        .link-card p {
+        .tool-card p {
             margin: 0;
             color: var(--pico-muted-color);
-            font-size: 0.9rem;
-            line-height: 1.4;
+            font-size: 0.75rem;
+            line-height: 1.3;
         }
 
-        .link-card .domain {
-            margin-top: 0.6rem;
-            font-size: 0.75rem;
+        .tool-card .domain {
+            margin-top: 0.4rem;
+            font-size: 0.7rem;
             color: #6b8dd6;
         }
     </style>
@@ -63,15 +66,15 @@
             <p>My corner of the internet — stuff that interests me.</p>
         </hgroup>
 
-        <div class="link-grid">
-            <a href="https://tools.atindriyaghosh.com" class="link-card">
-                <h2>HTML Tools</h2>
+        <div class="tool-grid">
+            <a href="https://tools.atindriyaghosh.com" class="tool-card">
+                <h3>HTML Tools</h3>
                 <p>A collection of single-file, browser-based utilities for everyday tasks like date/time conversion, text processing, and PDFs.</p>
                 <span class="domain">tools.atindriyaghosh.com</span>
             </a>
 
-            <a href="https://how.atindriyaghosh.com" class="link-card">
-                <h2>How I Build Things</h2>
+            <a href="https://how.atindriyaghosh.com" class="tool-card">
+                <h3>How I Build Things</h3>
                 <p>Notes on my approach to designing, building, and shipping projects.</p>
                 <span class="domain">how.atindriyaghosh.com</span>
             </a>
